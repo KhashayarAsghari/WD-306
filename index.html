@@ -4,15 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/aos-master/dist/aos.css" />
+    <script src="./assets/aos-master/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="./assets/Hover-master/css/hover.css" />
   </head>
   <body>
-    <h1>hi from git</h1>
+    <header class="header">
+      <div class="header__container">
+        <img
+          class="header__container__img--logo"
+          src="./assets/images/logo.png"
+          width="70px"
+          alt=""
+        />
 
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum esse
-      voluptatum aut cupiditate, quos, molestias incidunt iure quidem dolore
-      eligendi sed. Error, aliquam? Recusandae beatae possimus fugit aperiam
-      corporis dolor.
-    </p>
+        <img
+          class="header__container__img--burger"
+          src="./assets/images/icons/menu.svg"
+          width="40px"
+          alt=""
+        />
+
+        <nav class="navbar">
+          <ul class="navbar__ul">
+            <li>
+              <a href="#">MEN</a>
+            </li>
+            <li>
+              <a href="#">WOMAN</a>
+            </li>
+            <li>
+              <a href="#">KIDS</a>
+            </li>
+            <li>
+              <a href="#">SPORTS</a>
+            </li>
+            <button class="header-btn">
+              <a href="#">SHOP NOW</a>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="intro">
+      <div class="intro__container">
+        <h1>Best Seller</h1>
+        <p>find the best sellers in the world!</p>
+
+        <a href="#"> SHOP MAN </a>
+      </div>
+    </div>
+
+    <div style="margin-top: 20rem" class="manContainer">
+      <div class="manContainer__card card">
+        <img class="card__img" src="./assets/images/men/model1.jpg" alt="" />
+        <div class="card__desc">
+          <h3 class="card__desc__title">Model 1</h3>
+          <p class="card__desc__price">price: 300$</p>
+          <a
+            href="#"
+            style="padding: 8px; background-color: #0072bc"
+            class="hvr-shutter-out-horizontal"
+            >click me</a
+          >
+        </div>
+      </div>
+      <div class="manContainer__card card">
+        <img class="card__img" src="./assets/images/men/model1.jpg" alt="" />
+        <div class="card__desc">
+          <h3 class="card__desc__title">Model 1</h3>
+          <p class="card__desc__price">price: 300$</p>
+        </div>
+      </div>
+      <div class="manContainer__card card">
+        <img class="card__img" src="./assets/images/men/model1.jpg" alt="" />
+        <div class="card__desc">
+          <h3 class="card__desc__title">کفش مدل 1</h3>
+          <p class="card__desc__price">price: 300$</p>
+        </div>
+      </div>
+      <div class="manContainer__card card">
+        <img class="card__img" src="./assets/images/men/model1.jpg" alt="" />
+        <div class="card__desc">
+          <h3 class="card__desc__title">Model 1</h3>
+          <p class="card__desc__price">price: 300$</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

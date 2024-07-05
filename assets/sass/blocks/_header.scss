@@ -1,0 +1,43 @@
+// nesting
+
+.header {
+  padding: $padding-s 0;
+  background-color: $color-bg-gray;
+
+  @media (min-width: 768px) {
+    padding: $padding-xl 0;
+  }
+  //   @include perfectCenter();
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @include d-flex(space-between, center);
+
+    &__img--logo {
+      width: 40px;
+    }
+
+    &__img--burger {
+      width: 40px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .navbar {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: flex;
+      }
+
+      &__ul {
+        display: flex;
+        gap: $margin-xl;
+        list-style-type: none;
+      }
+    }
+  }
+}
